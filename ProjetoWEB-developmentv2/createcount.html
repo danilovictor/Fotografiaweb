@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>TechFotograpghy</title>
+    <title>TechFotograpghy </title>
     <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css"/>
+    <link rel="stylesheet" href=" cadastro.css">
     <!--
 	The Town
 	https://templatemo.com/tm-525-the-town
@@ -18,6 +19,7 @@
   
 
 </head>
+
 
  
 
@@ -42,7 +44,7 @@
                  <a class="nav-link tm-nav-link" href="#introduction">Bem vindo</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="yourjob.html">Nosso trabalho</a>
+                  <a class="nav-link tm-nav-link" href="#work">Nosso trabalho</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="#contact">Contato</a>
@@ -51,144 +53,241 @@
           </div>        
         </div>
       </nav>
+
+      <br/><br/><br/><br/><br/><br/><br/>
+
+
       
-      <div class="text-center tm-hero-text-container">
-        <div class="tm-hero-text-container-inner">
-            <p>teste</p>
-            <form>
 
-              <fieldset>
-              
-              <div class="col-sm-12 col-xs-12">
-              <div class="col-sm-4 col-xs-12">
-              <div class="form-group">
+      </div>
+      </section>
+
     
-              
-    
-                <h1> Login</h1>
-                <label for="text">Email</label>
-                <input type="text" class="form-control" id="text1" placeholder="Digite seu email">
-              </div>
-               </div>
-              <div class="col-sm-4 col-xs-12">
-               <div class="form-group">
-                <label for="text">Senha</label>
-                <input type="password" class="form-control" id="text2" placeholder="Digite sua senha"> 
-                <br/>
-    
-                <p> <a href="esqsenha.html" target="blank">Esqueceu a senha?</a></p>
-    
-                <input  class="btnenviar" type="submit" name="cadastrar" placeholder="Entrar" value="Entrar">
+    <div class="cadastro"> <br/><br/><br/>
+
+        <form class="form-horizontal">
+            <fieldset>
+            <div class="panel panel-primary">
+                <div class="panel-heading">Cadastro de Cliente</div> <br/><br/><br/>
                 
-              </fieldset>
+                <div class="panel-body">
+            <div class="form-group">
+            <!--
+            <div class="form-group">   
+            <div class="col-md-4 control-label">
+                <img id="logo" src="http://blogdoporao.com.br/wp-content/uploads/2016/12/Faculdade-pitagoras.png"/>
+            </div>
+            <div class="col-md-4 control-label">
+                <h1>Cadastro de Cliente</h1>
+                
+            </div>
+            </div>
+                -->
+            <div class="col-md-11 control-label">
+                    <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
+            </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>  
+              <div class="col-md-8">
+              <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
               </div>
-               </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>  
+              <div class="col-md-2">
+              <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
+              </div>
               
-              </div>  
-             </div>
-             </div>
+              <label class="col-md-1 control-label" for="Nome">Nascimento<h11>*</h11></label>  
+              <div class="col-md-2">
+              <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+            </div>
+            
+            <!-- Multiple Radios (inline) -->
+            
+              <label class="col-md-1 control-label" for="radios">Sexo <h11>*</h11></label>
+              <div class="col-md-4"> 
+                <label required="" class="radio-inline" for="radios-0" >
+                  <input name="sexo" id="sexo" value="feminino" type="radio" required>
+                  Feminino
+                </label> 
+                <label class="radio-inline" for="radios-1">
+                  <input name="sexo" id="sexo" value="masculino" type="radio">
+                  Masculino
+                </label>
+              </div>
+            </div>
+            
+            <!-- Prepended text-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
+              <div class="col-md-2">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                  <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                  OnKeyPress="formatar('## #####-####', this)">
+                </div>
+              </div>
+              
+                <label class="col-md-1 control-label" for="prependedtext">Telefone</label>
+                 <div class="col-md-2">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                  <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" type="text" maxlength="13"  pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                  OnKeyPress="formatar('## #####-####', this)">
+                </div>
+              </div>
+             </div> 
+            
+            <!-- Prepended text-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
+              <div class="col-md-5">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                  <input id="prependedtext" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                </div>
+              </div>
+            </div>
+            
+            
+            <!-- Search input-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
+              <div class="col-md-2">
+                <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+              </div>
+              <div class="col-md-2">
+                  <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
+                </div>
+            </div>
+            
+            <!-- Prepended text-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
+              <div class="col-md-4">
+                <div class="input-group">
+                  <span class="input-group-addon">Rua</span>
+                  <input id="rua" name="rua" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+                </div>
+                
+              </div>
+                <div class="col-md-2">
+                <div class="input-group">
+                  <span class="input-group-addon">Nº <h11>*</h11></span>
+                  <input id="numero" name="numero" class="form-control" placeholder="" required=""  type="text">
+                </div>
+                
+              </div>
+              
+              <div class="col-md-3">
+                <div class="input-group">
+                  <span class="input-group-addon">Bairro</span>
+                  <input id="bairro" name="bairro" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+                </div>
+                
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="prependedtext"></label>
+              <div class="col-md-4">
+                <div class="input-group">
+                  <span class="input-group-addon">Cidade</span>
+                  <input id="cidade" name="cidade" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+                </div>
+                
+              </div>
+              
+               <div class="col-md-2">
+                <div class="input-group">
+                  <span class="input-group-addon">Estado</span>
+                  <input id="estado" name="estado" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+                </div>
+                
+              </div>
+            </div>
+            
+            <!-- Select Basic -->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="Estado Civil">Estado Civil <h11>*</h11></label>
+              <div class="col-md-2">
+                <select required id="Estado Civil" name="Estado Civil" class="form-control">
+                    <option value=""></option>
+                  <option value="Solteiro(a)">Solteiro(a)</option>
+                  <option value="Casado(a)">Casado(a)</option>
+                  <option value="Divorciado(a)">Divorciado(a)</option>
+                  <option value="Viuvo(a)">Viuvo(a)</option>
+                </select>
+              </div>
+              
+              <!-- Prepended checkbox -->
+            
+              
+                
+              </div>
+            </div>
+            
+            
+            <!-- Select Basic -->
+           
+            
+            
+            <!-- Text input-->
+            
+              <label class="col-md-1 control-label" for="profissao">Profissão<h11>*</h11></label>  
+              <div class="col-md-4">
+              <input id="profissao" name="profissao" type="text" placeholder="" class="form-control input-md" required="">
+                
+              </div>
+            </div>
+            
+            <
+             
+             <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="textinput">Como ficou sabendo da TechFotograpghy</label>  
+              <div class="col-md-4">
+              <input id="textinput" name="textinput" placeholder="" class="form-control input-md" type="text">
+                
+              </div>
+              
+              </div>
+             
+             
+            
+            
+            <!-- Button (Double) -->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="Cadastrar"></label>
+              <div class="col-md-8">
+                <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit" href="index.html">Cadastrar</button>
+                <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
+              </div>
+            </div>
+            
+            </div>
+            </div>
+            
+            
+            </fieldset>
             </form>
-        </div>        
-      </div>
-
-      <div class="tm-next tm-intro-next">
-        <a href="#introduction" class="text-center tm-down-arrow-link">
-          <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
-        </a>
-      </div>      
-    </section>
- 
-
-   
-
-    
-   
     
     
-    <section id="work" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
-        <div class="row">
-          <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Nosso trabalho</h2>
-              <p class="mx-auto tm-work-description">
-               " A beleza pode ser vista em todas as coisas, vendo e compondo a beleza é o que separa a fotografia de fazer por fazer.”
-              </p>
-          </div>            
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="mx-auto tm-gallery-container">
-                    <div class="grid tm-gallery">
-                      <a href="img/img1.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/img1.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Vista</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/img2.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/img2.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Cores</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/img3.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/img3.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Memórias</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/img4.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/img4.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Natureza</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/img5.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/img5.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Ler</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/img6.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/img6.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Flores</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-01.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Viagem</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Urbano</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-                </div>                
-            </div>        
-          </div>
-      </div>
-    </section>
+    </div>
+
+    
+          
+
+
+
+
+    
 
     <!-- Contact -->
     <section id="contact" class="tm-section-pad-top tm-parallax-2">
@@ -245,9 +344,9 @@
       </div>
       <footer class="text-center small tm-footer">
           <p class="mb-0">
-            Copyright &copy; 2021 techfotograpghy 
+            Copyright &copy; 2021 Techfotograpghy 
             
-            - Design: <a rel="nofollow" href="https://templatemo.com" class="tm-footer-link">Template Mo</a>
+            
           </p>
         </footer>
     </section>
@@ -255,7 +354,10 @@
     <script src="slick/slick.min.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/cadastro.js"></script>
+    
     <script>
 
       function getOffSet(){
@@ -344,7 +446,7 @@
         
         // Add smooth scrolling to all links
         // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-         /* $("a").on('click', function(event) {
+        $("a").on('click', function(event) {
           if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
@@ -356,7 +458,7 @@
             });
           } // End if
         });
-      */
+
         // Pop up
         $('.tm-gallery').magnificPopup({
           delegate: 'a',
