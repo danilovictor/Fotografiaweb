@@ -68,7 +68,7 @@
         <form class="form-horizontal" action="index.html">
             <fieldset>
             <div class="panel panel-primary">
-                <div class="panel-heading">Cadastro de Cliente</div> <br/><br/><br/>
+                <div class="panel-heading"><b>Cadastro de Cliente</b></div> <br/><br/><br/>
                 
                 <div class="panel-body">
             <div class="form-group">
@@ -90,9 +90,9 @@
             
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>  
+              <label class="col-md-2 control-label" for="Nome">Nome e Sobrenome<h11>*</h11></label>  
               <div class="col-md-8">
-              <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+              <input id="Nome" name="Nome" placeholder="Digite seu nome" class="form-control input-md" required="required" type="text" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" />
               </div>
             </div>
             
@@ -100,7 +100,7 @@
             <div class="form-group">
               <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>  
               <div class="col-md-2">
-              <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
+              <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="14" OnKeyPress ="formatar('###.###.###-##', this)" pattern="[0-9]+$">
               </div>
               
               <label class="col-md-1 control-label" for="Nome">Nascimento<h11>*</h11></label>  
@@ -154,6 +154,7 @@
                 </div>
               </div>
             </div>
+            
             
             
             <!-- Search input-->
@@ -251,7 +252,7 @@
              
              <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-2 control-label" for="textinput">Como ficou sabendo da TechFotograpghy</label>  
+              <label class="col-md-2 control-label" for="textinput">Como ficou sabendo da TechFotograpghy?</label>  
               <div class="col-md-4">
               <input id="textinput" name="textinput" placeholder="" class="form-control input-md" type="text">
                 
@@ -289,7 +290,7 @@
 
     
 
-    <!-- Contact -->
+    <!-- Rodapé -->
     <section id="contact" class="tm-section-pad-top tm-parallax-2">
       <div class="container tm-container-contact">
         <div class="row">

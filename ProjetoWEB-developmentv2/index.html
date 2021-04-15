@@ -20,7 +20,7 @@
 </head>
 
 
- 
+
 
   <body>    
     <!-- Hero section -->
@@ -66,7 +66,7 @@
           <br />
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h1 class="title-login">Login</h1>
+              <h1 class="title-login"><center>Login</center></h1>
             </div>
             <div class="panel-body">
               <form method="" action="myphoto.html">
@@ -76,7 +76,7 @@
                     <span class="input-group-addon"> <i
                           class="glyphicon glyphicon-user" style="width: auto"></i>
       
-                        </span> <input id="txtUsuario" runat="server" type="text" class="form-control" name="username" placeholder="Usuário" required="" />
+                        </span> <input id="txtUsuario" runat="server" type="text" class="form-control" autocomplete="on" name="username" placeholder="Usuário" required="" />
       
                   </div>
                 </div>
@@ -86,13 +86,14 @@
                           class="glyphicon glyphicon-lock" style="width: auto"></i>
                         </span> <input id="txtSenha" runat="server" type="password" class="form-control" name="password" placeholder="Senha" required="" /> <br/>
                         
+
                   </div>
                 </div>
                
                 <div>
-                  <br/> <p>Esqueceu a senha? <a href="esqsenha.html" target="blank"> Clique aqui</a></p>
+                  <br/> <a href="esqsenha.html" target="blank"> <center> <font color= "Yellow"> Esqueci minha senha</font></center> </a>
                   <input class="btn btn-xm btn-block btn-entrar" type="submit" value="Entrar" onclick="Login()" />
-                  <p> Não possui conta?<a href="createcount.html">Faça seu cadastro</a></p>
+                  <p> Não possui conta?<a href="createcount.html"><font color ="Yellow">Faça seu cadastro agora</font></a></p>
                     
                 </div>
               </form>
@@ -337,6 +338,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/login.js"></script>
     <script src="js/scripts.js"></script>
+    
 
   </body>
 </html>
