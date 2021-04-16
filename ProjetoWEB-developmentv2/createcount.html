@@ -68,7 +68,7 @@
         <form class="form-horizontal" action="index.html">
             <fieldset>
             <div class="panel panel-primary">
-                <div class="panel-heading"><b>Cadastro de Cliente</b></div> <br/><br/><br/>
+                <div class="panel-heading"><b>Cadastro de Cliente</b></div> <br/><br/>
                 
                 <div class="panel-body">
             <div class="form-group">
@@ -92,7 +92,7 @@
             <div class="form-group">
               <label class="col-md-2 control-label" for="Nome">Nome e Sobrenome<h11>*</h11></label>  
               <div class="col-md-8">
-              <input id="Nome" name="Nome" placeholder="Digite seu nome" class="form-control input-md" required="required" type="text" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" />
+              <input id="Nome" name="Nome" placeholder="Digite seu nome" class="form-control input-md" required="required" type="text" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" maxlength="40" />
               </div>
             </div>
             
@@ -100,7 +100,7 @@
             <div class="form-group">
               <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>  
               <div class="col-md-2">
-              <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="14" OnKeyPress ="formatar('###.###.###-##', this)" pattern="[0-9]+$">
+              <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="14" OnKeyPress ="formatar('###.###.###-##', this)" pattern="[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}">
               </div>
               
               <label class="col-md-1 control-label" for="Nome">Nascimento<h11>*</h11></label>  

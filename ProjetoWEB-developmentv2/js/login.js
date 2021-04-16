@@ -5,7 +5,7 @@ function Login() {
     var senha = document.getElementsByName('password')[0].value;
     seha = senha.toLowerCase();
   
-    if (usuario == "admin" && senha == "admin") {
+    if (usuario == "joao14" && senha == "j4321") {
       window.location = "myphoto.html";
       done = 1;
     }
